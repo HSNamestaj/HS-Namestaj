@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HS Namestaj - Proizvodnja</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <h1>HS Namestaj</h1>
+
+  <nav class="meni">
+    <div class="logo">HS Namestaj</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="o-nama.html">O nama</a></li>
+      <li><a href="proizvodnja.html" class="active">Proizvodnja</a></li>
+      <li><a href="galerija.html">Galerija</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <div class="kartica">
+    <p>Naša proizvodnja uključuje sve faze izrade nameštaja – od izbora materijala, sečenja, šivenja i montaže, do finalne dorade i isporuke. Svi proizvodi su izrađeni sa maksimalnom pažnjom.</p>
+  </div>
+
+  <div class="kontakt-info">
+    <p><a href="tel:+381612536350"><i class="fas fa-phone-alt"></i> Pozovi nas: 0612536350</a></p>
+    <p><a href="sms:+381612536350"><i class="fas fa-sms"></i> Pošalji SMS</a></p>
+    <p><a href="https://www.instagram.com/namestaj_h_s/" target="_blank"><i class="fab fa-instagram"></i> Prati nas na Instagramu</a></p>
+  </div>
+
+  <footer>
+    © 2025 HS Namestaj | Sva prava zadržana
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
