@@ -34,7 +34,7 @@
 
     <div class="extra-buttons">
       <button id="btn-proizvodi">Proizvodi i Cene</button>
-      <button id="btn-stof">Stof karte</button>
+      <button id="btn-stof" onclick="window.open('https://alnassaj.rs/mebl-stof/', '_blank')">Stof karte</button>
     </div>
 
     <div id="sekcija-proizvodi">
@@ -50,7 +50,7 @@
         <div><img src="slike/8.jpg" alt="Tabure"><p>Cena: 5.999 din</p></div>
         <div><img src="slike/9.jpg" alt="Tabure"><p>Cena: 5.999 din</p></div>
         <div><img src="slike/10.jpg" alt="Fotelja"><p>Cena: 15.000 din</p></div>
-         <div><img src="slike/11.jpg" alt="Fotelja"><p>Cena: 55.000 din</p></div>
+        <div><img src="slike/11.jpg" alt="Fotelja"><p>Cena: 55.000 din</p></div>
       </div>
       <p><strong>Cene mogu da se razlikuju, za detalje pozovite ili pišite na Instagram</strong></p>
     </div>
@@ -62,6 +62,7 @@
         <div><img src="slike/stof2.jpg" alt="Stof 2"><p>Dezen: Zelena tkanina</p></div>
       </div>
     </div>
+
   </div>
 
   <div class="kontakt-info">
@@ -81,8 +82,10 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      // dugme Saznaj više
       var btn = document.getElementById("btn-saznaj");
       var detalji = document.getElementById("detalji");
+
       btn.addEventListener("click", function() {
         if (detalji.style.display === "none" || detalji.style.display === "") {
           detalji.style.display = "block";
@@ -93,19 +96,15 @@
         }
       });
 
+      // dugme Proizvodi
       const btnProizvodi = document.getElementById("btn-proizvodi");
-      const btnStof = document.getElementById("btn-stof");
       const sekcijaProizvodi = document.getElementById("sekcija-proizvodi");
-      const sekcijaStof = document.getElementById("sekcija-stof");
 
       btnProizvodi.addEventListener("click", () => {
         sekcijaProizvodi.style.display = sekcijaProizvodi.style.display === "block" ? "none" : "block";
       });
 
-      btnStof.addEventListener("click", () => {
-        sekcijaStof.style.display = sekcijaStof.style.display === "block" ? "none" : "block";
-      });
-
+      // Lightbox kod ostaje isti
       const lightbox = document.getElementById('lightbox');
       const lightboxImg = document.getElementById('lightbox-img');
       const closeBtn = document.getElementById('close');
